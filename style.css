@@ -1,15 +1,47 @@
+html {
+  margin: 0;
+  padding:0;
+}
+
 body {
-  font-family: Helvetica;
+  height: 100%;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+div.container {
+  position: absolute;
+
+  width: 214px;
+  height: 234px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  border: 3px solid #404040;
 }
 
 h1 {
-  text-align: center;
+  color: #404040;
 }
 
-h2 {
-  text-align: center;
+p {
+  color: #404040;
 }
 
-div {
-  display: none;
+a {
+  text-decoration: none;
+  color: #4040A0;
+  padding-top: 80px;
+  display: block;
+}
+a:hover {
+  text-decoration: underline;
 }
