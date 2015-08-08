@@ -8,19 +8,25 @@ html, body
 
 h1
   text-align center
-  font-size 30px
-  &.no-margin
-    margin 0
-    padding 40px
+  font-size 36px
 
 h2
   font-family UbuntuLight
   text-align center
+  font-size 30px
+  &.no-margin
+    margin 0
+    padding 40px
+  
+h3
   font-size 22px
 
 a, a:link, a:visited, a:hover, a:active
   color #90cfd5
   text-decoration none
+  
+p
+  font-family UbuntuLight
 
 /* Sections */
 
@@ -70,18 +76,25 @@ section#projects
 
 div.project-container
   max-width 1024px
-  margin 20px auto 80px auto
+  min-height 180px
+  margin 40px auto 60px auto
+
+div.project-description-container
+  &.left
+    padding-left 200px
+  &.right
+    padding-right 200px
 
 img.project-image
-  width 200px
+  width 150px
+  height 150px
+  border-radius 12px
 
   &.left
     float left
-    margin 0 20px 20px 0
 
   &.right
     float right
-    margin 20px 0 0 20px
 
 /* Footer */
 footer
