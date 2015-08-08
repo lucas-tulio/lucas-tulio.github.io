@@ -75,6 +75,9 @@ section#projects
   color #fff
   background-color #068080
   padding 0 80px 20px 80px
+  @media all and (max-width: 420px)
+    padding-left 20px
+    padding-right 20px
 
 div.project-container
   max-width 800px
@@ -82,28 +85,46 @@ div.project-container
   margin 40px auto 60px auto
 
 div.project-description-container
+  @media all and (max-width: 640px)
+    text-align center
   &.left
     padding-left 200px
+    @media all and (max-width: 640px)
+      padding-left 0
   &.right
     padding-right 200px
+    @media all and (max-width: 640px)
+      padding-right 0
 
 img.project-image
   width 150px
   height 150px
   border-radius 12px
+  
+  @media all and (max-width: 640px)
+    display block
+    margin-left auto
+    margin-right auto
 
   &.left
     float left
+    @media all and (max-width: 640px)
+      float none
 
   &.right
     float right
+    @media all and (max-width: 640px)
+      float none
 
 /* Experience */
 
 section#experience
   background-color #19a0a0
   padding 0 80px 20px 80px
-  
+  @media all and (max-width: 420px)
+    padding-left 20px
+    padding-right 20px
+
   li
     margin-top 20px
 
