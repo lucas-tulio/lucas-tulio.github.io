@@ -1,29 +1,98 @@
+/* General stuff */
+
 html, body
   margin 0
   padding 0
   font-family UbuntuRegular
+  color #fff
 
 h1
-  font-size 31px
+  text-align center
+  font-size 30px
+  &.no-margin
+    margin 0
+    padding 40px
 
 h2
   font-family UbuntuLight
-  font-size 23px
+  text-align center
+  font-size 22px
+
+a, a:link, a:visited, a:hover, a:active
+  color #90cfd5
+  text-decoration none
+
+/* Sections */
+
+section
+  margin 0
+  padding 0
+
+/* Intro Section */
+
+section#intro
+  padding-top 80px
+  background-color #19a0a0
 
 img.profile-pic
   display block
-  width 307px
-  height 307px
+  width 260px
+  height 260px
   border-radius 50%
   margin 0 auto 0 auto
 
-section#intro
-  height 487px
+div.links-container
+  display block
+  height 100px
+  width 300px
+  margin 40px auto 0 auto
+  padding-bottom 20px
+  
+div.link-placeholder
+  width 80px
+  height 80px
+  border-radius 50%
+  background-color #90cfd5
+  float left
+  margin-right 30px
+  &.last
+    margin-right 0px
 
-  padding-top 83px
+/* Project Section */
+
+section#projects
   color #fff
-  background-color #19a0a0
+  background-color #068080
+  padding 0 80px 20px 80px
+
+div.project-container
+  display inline-block
+  margin 20px 0 20px 0
+
+img.project-image
+  width 200px
+  margin-top 20px
+  
+  &.left
+    float left
+
+  &.right
+    float 0
+    
+
+div.project-description-container
+  float left
+  width 500px
+  padding-left 20px
+
+/* Footer */
+footer
   text-align center
+  background-color #035050
+  
+  p
+    margin 0
+    padding 20px
 
 /* Fonts */
 
