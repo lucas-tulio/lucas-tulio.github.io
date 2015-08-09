@@ -1,6 +1,27 @@
 /* General stuff */
 
 $mobile_screen = 640px
+$anim_delay = 0.3s
+
+/* Animation */
+
+transition(duration, delay)
+  -webkit-transition all duration delay ease-out
+  -moz-transition all duration delay ease-out
+  -o-transition all duration delay ease-out
+  transition all duration delay ease-out
+
+.fade-from-top
+  opacity 0
+  transform translateY(-14px)
+  -webkit-transform translateY(-14px)
+
+.fade-from-bot
+  opacity 0
+  transform translateY(14px)
+  -webkit-transform translateY(14px)
+
+/* Basic elements */
 
 html, body
   margin 0
@@ -50,8 +71,7 @@ h3.center
   margin 8px
 
 img.profile-pic
-  transition  opacity    0.6s 0s ease-out,
-              transform  0.6s 0s ease-out
+  transition 0.6s $anim_delay
   display block
   width 260px
   height 260px
@@ -62,24 +82,19 @@ img.profile-pic
     height 200px
 
 h1#name
-  transition  opacity    0.6s 0.2s ease-out,
-              transform  0.6s 0.2s ease-out
+  transition 0.6s $anim_delay + 0.2s
 
 h3#first-thing
-  transition  opacity    0.6s 0.5s ease-out,
-              transform  0.6s 0.5s ease-out
+  transition 0.6s $anim_delay + 0.5s
 
 h3#second-thing
-  transition  opacity    0.6s 0.6s ease-out,
-              transform  0.6s 0.6s ease-out
+  transition 0.6s $anim_delay + 0.7s
 
 h3#third-thing
-  transition  opacity    0.6s 0.7s ease-out,
-              transform  0.6s 0.7s ease-out
+  transition 0.6s $anim_delay + 0.9s
 
 div.links-container
-  transition  opacity    0.6s 0.9s ease-out,
-              transform  0.6s 0.9s ease-out
+  transition 0.6s $anim_delay + 1.1s
   display block
   height 100px
   width 300px
@@ -175,7 +190,6 @@ footer
   
   p
     margin 0
-    
 
 /* Fonts */
 
@@ -188,13 +202,3 @@ footer
   font-family: UbuntuLight
   src: url('./fonts/Ubuntu-L.ttf')
 }
-
-/* Animation */
-
-.fade-from-top
-  opacity 0
-  transform translateY(-14px)
-
-.fade-from-bot
-  opacity 0
-  transform translateY(14px)
