@@ -50,6 +50,8 @@ h3.center
   margin 8px
 
 img.profile-pic
+  transition  opacity    0.6s 0s ease-out,
+              transform  0.6s 0s ease-out
   display block
   width 260px
   height 260px
@@ -59,7 +61,25 @@ img.profile-pic
     width 200px
     height 200px
 
+h1#name
+  transition  opacity    0.6s 0.2s ease-out,
+              transform  0.6s 0.2s ease-out
+
+h3#first-thing
+  transition  opacity    0.6s 0.5s ease-out,
+              transform  0.6s 0.5s ease-out
+
+h3#second-thing
+  transition  opacity    0.6s 0.6s ease-out,
+              transform  0.6s 0.6s ease-out
+
+h3#third-thing
+  transition  opacity    0.6s 0.7s ease-out,
+              transform  0.6s 0.7s ease-out
+
 div.links-container
+  transition  opacity    0.6s 0.9s ease-out,
+              transform  0.6s 0.9s ease-out
   display block
   height 100px
   width 300px
@@ -169,7 +189,12 @@ footer
   src: url('./fonts/Ubuntu-L.ttf')
 }
 
-/* Animations */
+/* Animation */
 
-.hidden
-  opacity 0%
+.fade-from-top
+  opacity 0
+  transform translateY(-14px)
+
+.fade-from-bot
+  opacity 0
+  transform translateY(14px)
