@@ -1,5 +1,7 @@
 /* General stuff */
 
+$mobile_screen = 640px
+
 html, body
   margin 0
   padding 0
@@ -40,7 +42,7 @@ section
 section#intro
   padding-top 80px
   background-color #19a0a0
-  @media all and (max-width: 420px)
+  @media screen and (max-width: $mobile_screen)
     padding-top 44px
 
 h3.center
@@ -53,7 +55,7 @@ img.profile-pic
   height 260px
   border-radius 50%
   margin 0 auto 0 auto
-  @media all and (max-width: 420px)
+  @media screen and (max-width: $mobile_screen)
     width 200px
     height 200px
 
@@ -63,7 +65,7 @@ div.links-container
   width 300px
   margin 40px auto 0 auto
   padding-bottom 20px
-  @media all and (max-width: 420px)
+  @media screen and (max-width: $mobile_screen)
     width 280px
 
 div.link-placeholder
@@ -73,7 +75,7 @@ div.link-placeholder
   margin-right 30px
   border-radius 50%
   background-color #90cfd5
-  @media all and (max-width: 420px)
+  @media screen and (max-width: $mobile_screen)
     margin-right 20px
 
   &.last
@@ -85,7 +87,7 @@ section#projects
   color #fff
   background-color #068080
   padding 0 80px 20px 80px
-  @media all and (max-width: 420px)
+  @media screen and (max-width: $mobile_screen)
     padding-left 20px
     padding-right 20px
 
@@ -95,15 +97,15 @@ div.project-container
   margin 40px auto 60px auto
 
 div.project-description-container
-  @media all and (max-width: 640px)
+  @media screen and (max-width: $mobile_screen)
     text-align center
   &.left
     padding-left 200px
-    @media all and (max-width: 640px)
+    @media screen and (max-width: $mobile_screen)
       padding-left 0
   &.right
     padding-right 200px
-    @media all and (max-width: 640px)
+    @media screen and (max-width: $mobile_screen)
       padding-right 0
 
 img.project-image
@@ -111,19 +113,19 @@ img.project-image
   height 150px
   border-radius 12px
   
-  @media all and (max-width: 640px)
+  @media screen and (max-width: $mobile_screen)
     display block
     margin-left auto
     margin-right auto
 
   &.left
     float left
-    @media all and (max-width: 640px)
+    @media screen and (max-width: $mobile_screen)
       float none
 
   &.right
     float right
-    @media all and (max-width: 640px)
+    @media screen and (max-width: $mobile_screen)
       float none
 
 /* Experience */
@@ -131,7 +133,7 @@ img.project-image
 section#experience
   background-color #19a0a0
   padding 0 80px 20px 80px
-  @media all and (max-width: 420px)
+  @media screen and (max-width: $mobile_screen)
     padding-left 20px
     padding-right 20px
 
@@ -166,3 +168,8 @@ footer
   font-family: UbuntuLight
   src: url('./fonts/Ubuntu-L.ttf')
 }
+
+/* Animations */
+
+.hidden
+  opacity 0%
