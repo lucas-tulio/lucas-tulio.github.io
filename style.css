@@ -1,0 +1,299 @@
+/* General stuff */
+/* Animation */
+.fade-from-top {
+  opacity: 0;
+  transform: translateY(-14px);
+  -webkit-transform: translateY(-14px);
+}
+.fade-from-bot {
+  opacity: 0;
+  transform: translateY(14px);
+  -webkit-transform: translateY(14px);
+}
+/* Basic elements */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: UbuntuRegular;
+  color: #fff;
+}
+h1 {
+  text-align: center;
+  font-size: 36px;
+}
+@media screen and (max-height: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+h2 {
+  font-family: UbuntuLight;
+  text-align: center;
+  font-size: 30px;
+}
+h2.no-margin {
+  margin: 0;
+  padding: 40px;
+}
+h3 {
+  font-size: 22px;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #90cfd5;
+  text-decoration: none;
+}
+p {
+  font-family: UbuntuLight;
+  font-size: 18px;
+}
+/* Sections */
+section {
+  margin: 0;
+  padding: 0;
+}
+/* Intro Section */
+section#intro {
+  padding-top: 80px;
+  background-color: #19a0a0;
+}
+@media screen and (max-width: 640px) {
+  section#intro {
+    padding-top: 44px;
+  }
+}
+@media screen and (max-height: 480px) {
+  section#intro {
+    padding-top: 20px;
+  }
+}
+h3.center {
+  text-align: center;
+  margin: 8px;
+}
+img.profile-pic {
+  -webkit-transition: all 0.6s 0.3s ease-out;
+  -moz-transition: all 0.6s 0.3s ease-out;
+  -o-transition: all 0.6s 0.3s ease-out;
+  transition: all 0.6s 0.3s ease-out;
+  display: block;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  margin: 0 auto 0 auto;
+}
+@media screen and (max-width: 640px) {
+  img.profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  img.profile-pic {
+    width: 160px;
+    height: 160px;
+  }
+}
+h1#name {
+  -webkit-transition: all 0.6s 0.6s ease-out;
+  -moz-transition: all 0.6s 0.6s ease-out;
+  -o-transition: all 0.6s 0.6s ease-out;
+  transition: all 0.6s 0.6s ease-out;
+}
+h3#first-thing {
+  -webkit-transition: all 0.6s 0.8s ease-out;
+  -moz-transition: all 0.6s 0.8s ease-out;
+  -o-transition: all 0.6s 0.8s ease-out;
+  transition: all 0.6s 0.8s ease-out;
+}
+h3#second-thing {
+  -webkit-transition: all 0.6s 1s ease-out;
+  -moz-transition: all 0.6s 1s ease-out;
+  -o-transition: all 0.6s 1s ease-out;
+  transition: all 0.6s 1s ease-out;
+}
+h3#third-thing {
+  -webkit-transition: all 0.6s 1.2s ease-out;
+  -moz-transition: all 0.6s 1.2s ease-out;
+  -o-transition: all 0.6s 1.2s ease-out;
+  transition: all 0.6s 1.2s ease-out;
+}
+div.links-container {
+  -webkit-transition: all 0.6s 1.4s ease-out;
+  -moz-transition: all 0.6s 1.4s ease-out;
+  -o-transition: all 0.6s 1.4s ease-out;
+  transition: all 0.6s 1.4s ease-out;
+  display: block;
+  height: 80px;
+  width: 300px;
+  margin: 40px auto 0 auto;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 640px) {
+  div.links-container {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 480px) {
+  div.links-container {
+    padding-bottom: 44px;
+  }
+}
+div.link-placeholder {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 30px;
+  border-radius: 50%;
+  background-color: #90cfd5;
+  -webkit-transition: all 0.2s 0s ease-out;
+  -moz-transition: all 0.2s 0s ease-out;
+  -o-transition: all 0.2s 0s ease-out;
+  transition: all 0.2s 0s ease-out;
+}
+@media screen and (max-width: 640px) {
+  div.link-placeholder {
+    margin-right: 20px;
+  }
+}
+div.link-placeholder:hover {
+  transform: translateY(-6px);
+}
+div.link-placeholder.last {
+  margin-right: 0px;
+}
+img.intro-link {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 30px;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s 0s ease-out;
+  -moz-transition: all 0.2s 0s ease-out;
+  -o-transition: all 0.2s 0s ease-out;
+  transition: all 0.2s 0s ease-out;
+}
+@media screen and (max-width: 640px) {
+  img.intro-link {
+    margin-right: 20px;
+  }
+}
+img.intro-link:hover {
+  transform: translateY(-6px);
+}
+img.intro-link.last {
+  margin-right: 0px;
+}
+/* Project Section */
+section.projects {
+  color: #fff;
+  background-color: #068080;
+  padding: 0 80px 20px 80px;
+}
+@media screen and (max-width: 640px) {
+  section.projects {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+section#open-source-projects {
+  background-color: #19a0a0;
+}
+div.project-container {
+  max-width: 800px;
+  min-height: 180px;
+  margin: 40px auto 60px auto;
+}
+@media screen and (max-width: 640px) {
+  div.project-description-container {
+    text-align: center;
+  }
+}
+div.project-description-container.left {
+  padding-left: 200px;
+}
+@media screen and (max-width: 640px) {
+  div.project-description-container.left {
+    padding-left: 0;
+  }
+}
+div.project-description-container.right {
+  padding-right: 200px;
+}
+@media screen and (max-width: 640px) {
+  div.project-description-container.right {
+    padding-right: 0;
+  }
+}
+img.project-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 2px #333;
+}
+@media screen and (max-width: 640px) {
+  img.project-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+img.project-image.left {
+  float: left;
+}
+@media screen and (max-width: 640px) {
+  img.project-image.left {
+    float: none;
+  }
+}
+img.project-image.right {
+  float: right;
+}
+@media screen and (max-width: 640px) {
+  img.project-image.right {
+    float: none;
+  }
+}
+/* Experience */
+section#experience {
+  background-color: #068080;
+  padding: 0 80px 20px 80px;
+}
+@media screen and (max-width: 640px) {
+  section#experience {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+section#experience li {
+  margin-top: 20px;
+  font-family: UbuntuLight;
+  font-size: 18px;
+}
+div.experience-container {
+  margin: 40px auto 40px auto;
+  max-width: 800px;
+}
+/* Footer */
+footer {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background-color: #033030;
+}
+footer p {
+  margin: 0;
+}
+/* Fonts */
+@font-face {
+  font-family: UbuntuRegular;
+  src: url("./fonts/Ubuntu-R.ttf");
+}
+@font-face {
+  font-family: UbuntuLight;
+  src: url("./fonts/Ubuntu-L.ttf");
+}
