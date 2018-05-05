@@ -6,6 +6,7 @@ body {
   font-family: UbuntuLight;
   font-size: 16px;
   color: #444;
+  background-color: #eee;
 }
 
 h1 {
@@ -73,6 +74,21 @@ h3 {
   width: 512px;
   height: 288px;
   background-color: #ddd;
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    max-width: 1224px;
+  }
+
+  #games {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 640px) {
