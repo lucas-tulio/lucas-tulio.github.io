@@ -6,7 +6,7 @@ body {
   font-family: UbuntuLight;
   font-size: 16px;
   color: #444;
-  background-color: #eee;
+  background-color: #f3f3f3;
 }
 
 h1 {
@@ -99,4 +99,20 @@ h3 {
     width: 256px;
     height: 144px;
   }
+}
+
+/* Game page */
+
+#game-details {
+  max-width: 512px;
+  margin: 0 auto;
+}
+
+h3.details-title {
+  text-align: center;
+  margin: 20px 0 40px;
+}
+
+.game-description {
+  
 }
