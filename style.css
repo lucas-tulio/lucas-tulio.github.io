@@ -16,6 +16,7 @@ h1 {
 h2 {
   font-size: 20px;
   margin: 4px 0 4px;
+  color: #555;
 }
 
 h3 {
@@ -39,13 +40,19 @@ h3 {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin: 20px 0 40px 0;
+  margin-bottom: 20px;
 }
 
 .my-picture {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
 }
 
 /* Games list */
@@ -69,6 +76,9 @@ h3 {
 }
 
 @media screen and (max-width: 640px) {
+  .game {
+    max-width: 256px;
+  }
   .game-screenshot {
     width: 256px;
     height: 144px;
