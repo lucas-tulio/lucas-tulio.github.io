@@ -1,0 +1,76 @@
+/* Basic styles */
+body {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 900px;
+  font-family: UbuntuLight;
+  font-size: 16px;
+  color: #444;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 4px 0 4px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 4px 0 4px;
+}
+
+h3 {
+  margin: 8px 0;
+}
+
+/* Fonts */
+@font-face {
+  font-family: UbuntuRegular;
+  src: url("./fonts/Ubuntu-R.ttf");
+}
+@font-face {
+  font-family: UbuntuLight;
+  src: url("./fonts/Ubuntu-L.ttf");
+}
+
+/* Personal (header) */
+
+#personal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 20px 0 40px 0;
+}
+
+.my-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Games list */
+
+#games {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.game {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.game-screenshot {
+  width: 512px;
+  height: 288px;
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 640px) {
+  .game-screenshot {
+    width: 256px;
+    height: 144px;
+  }
+}
