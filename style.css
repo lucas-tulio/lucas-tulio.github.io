@@ -24,6 +24,12 @@ h3 {
   margin: 8px 0;
 }
 
+hr {
+  background-color: #ddd;
+  height: 1px;
+  border: 0;
+}
+
 /* Fonts */
 @font-face {
   font-family: UbuntuRegular;
@@ -104,15 +110,16 @@ h3 {
 /* Game page */
 
 #game-details {
-  max-width: 512px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
 h3.details-title {
   text-align: center;
-  margin: 20px 0 40px;
+  margin: 40px 0 40px;
 }
 
-.game-description {
-  
+.google-play-badge {
+  width: 240px;
+  height: auto;
 }
