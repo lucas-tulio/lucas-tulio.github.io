@@ -1,4 +1,5 @@
 /* Basic styles */
+
 body {
   margin: 0 auto;
   padding: 20px;
@@ -31,6 +32,7 @@ hr {
 }
 
 /* Fonts */
+
 @font-face {
   font-family: UbuntuRegular;
   src: url("./fonts/Ubuntu-R.ttf");
@@ -64,7 +66,7 @@ hr {
 
 /* Games list */
 
-#games {
+.games-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,7 +74,6 @@ hr {
 }
 
 .game {
-  display: block;
   margin-bottom: 20px;
 }
 
@@ -87,7 +88,7 @@ hr {
     max-width: 1224px;
   }
 
-  #games {
+  .games-list {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -128,4 +129,38 @@ h3.details-title {
 .google-play-badge {
   width: 240px;
   height: auto;
+}
+
+/* Other Projects */
+
+.other-games-list {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.other-games {
+  max-width: 256px;
+  margin-bottom: 20px;
+}
+
+.other-game-screenshot {
+  width: 256px;
+  height: auto;
+}
+
+@media screen and (max-width: 640px) {
+  .other-games-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
