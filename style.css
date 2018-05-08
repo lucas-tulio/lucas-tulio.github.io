@@ -134,7 +134,7 @@ h3.details-title {
 /* Other Projects */
 
 .other-games-list {
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
