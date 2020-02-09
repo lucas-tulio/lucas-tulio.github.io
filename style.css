@@ -121,6 +121,19 @@ hr {
   background-color: #ddd;
 }
 
+.mobile-image-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-details-screenshot-mobile {
+  max-width: 100%;
+  max-height: 75vh;
+  margin-top: 20px;
+  background-color: #ddd;
+}
+
 h3.details-title {
   text-align: center;
   margin: 40px 0 40px;
