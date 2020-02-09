@@ -1,0 +1,179 @@
+/* Basic styles */
+
+body {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 900px;
+  font-family: UbuntuLight;
+  font-size: 16px;
+  color: #444;
+  background-color: #fefefe;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 4px 0 4px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 4px 0 4px;
+  color: #555;
+}
+
+h3 {
+  margin: 8px 0;
+}
+
+hr {
+  background-color: #ddd;
+  height: 1px;
+  border: 0;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: UbuntuRegular;
+  src: url("./fonts/Ubuntu-R.ttf");
+}
+@font-face {
+  font-family: UbuntuLight;
+  src: url("./fonts/Ubuntu-L.ttf");
+}
+
+/* Personal (header) */
+
+#personal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.my-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+/* Games list */
+
+.games-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.game {
+  margin-bottom: 20px;
+}
+
+.game-screenshot {
+  max-width: 512px;
+  height: 288px;
+  background-color: #ddd;
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    max-width: 1224px;
+  }
+
+  .games-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .game {
+    max-width: 256px;
+  }
+  .game-screenshot {
+    width: 256px;
+    height: 144px;
+  }
+}
+
+/* Game page */
+
+#game-details {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.game-details-screenshot {
+  max-width: 100%;
+  height: auto;
+  background-color: #ddd;
+}
+
+.mobile-image-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-details-screenshot-mobile {
+  max-width: 100%;
+  max-height: 75vh;
+  margin-top: 20px;
+  background-color: #ddd;
+}
+
+h3.details-title {
+  text-align: center;
+  margin: 40px 0 40px;
+}
+
+.google-play-badge {
+  width: 240px;
+  height: auto;
+}
+
+/* Other Projects */
+
+.other-games-list {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.other-games {
+  max-width: 256px;
+  margin-bottom: 20px;
+}
+
+.other-game-screenshot {
+  width: 256px;
+  height: auto;
+}
+
+@media screen and (max-width: 640px) {
+  .other-games-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
