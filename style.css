@@ -1,67 +1,92 @@
-/* Basic styles */
-
-body {
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 900px;
-  font-family: UbuntuLight;
-  font-size: 16px;
-  color: #444;
-  background-color: #fefefe;
-}
-
-h1 {
-  font-size: 24px;
-  margin: 4px 0 4px;
-}
-
-h2 {
-  font-size: 20px;
-  margin: 4px 0 4px;
-  color: #555;
-}
-
-h3 {
-  margin: 8px 0;
-}
-
-hr {
-  background-color: #ddd;
-  height: 1px;
-  border: 0;
-}
-
 /* Fonts */
 
 @font-face {
   font-family: UbuntuRegular;
   src: url("./fonts/Ubuntu-R.ttf");
 }
+
 @font-face {
   font-family: UbuntuLight;
   src: url("./fonts/Ubuntu-L.ttf");
 }
 
+@font-face {
+  font-family: Cavilant;
+  src: url("./fonts/Cavilant.otf");
+}
+
+/* Basic styles */
+
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 480px;
+  width: calc(100% - 40px);
+  padding: 40px 20px;
+  font-family: UbuntuRegular;
+  font-size: 16px;
+  color: #eee;
+  background-color: #334;
+}
+
+h1 {
+  font-family: Cavilant;
+  font-size: 24px;
+  font-weight: light;
+  margin: 12px 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 22px 0 22px 0;
+  text-align: left;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0 14px 0;
+}
+
+hr {
+  background-color: #ddd;
+  height: 1px;
+  border: 0;
+  margin: 0 -4px 0 -2px;
+}
+
 /* Personal (header) */
 
-#personal {
+.personal {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .my-picture {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+  border: solid 4px #99ff99;
 }
 
 .icon {
   width: 20px;
   height: 20px;
   margin-right: 4px;
+}
+
+.separator {
+  background-color: transparent;
+  border-top: 3px dotted #9f9;
 }
 
 /* Games list */
@@ -73,75 +98,30 @@ hr {
   align-content: center;
 }
 
-.game {
-  margin-bottom: 20px;
+.game-card {
+  max-width: 480px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #667;
+  box-shadow: 0px 2px 4px #111;
+  margin-bottom: 40px;
+}
+
+.game-content {
+  padding: 8px 14px;
 }
 
 .game-screenshot {
-  max-width: 512px;
-  height: 288px;
-  background-color: #ddd;
+  max-width: 480px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
 }
 
-@media screen and (min-width: 1080px) {
-  body {
-    max-width: 1224px;
-  }
-
-  .games-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .game {
-    max-width: 256px;
-  }
-  .game-screenshot {
-    width: 256px;
-    height: 144px;
-  }
-}
-
-/* Game page */
-
-#game-details {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.game-details-screenshot {
-  max-width: 100%;
-  height: auto;
-  background-color: #ddd;
-}
-
-.mobile-image-container {
+.game-card-footer {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.game-details-screenshot-mobile {
-  max-width: 100%;
-  max-height: 75vh;
-  margin-top: 20px;
-  background-color: #ddd;
-}
-
-h3.details-title {
-  text-align: center;
-  margin: 40px 0 40px;
-}
-
-.google-play-badge {
-  width: 240px;
-  height: auto;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 /* Other Projects */
@@ -165,15 +145,4 @@ h3.details-title {
 .other-game-screenshot {
   width: 256px;
   height: auto;
-}
-
-@media screen and (max-width: 640px) {
-  .other-games-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
 }

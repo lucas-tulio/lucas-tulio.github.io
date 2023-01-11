@@ -1,148 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
   <meta name="author" content="Lucas Tulio">
   <meta name="description" content="Portfolio website">
-
   <link rel="stylesheet" href="style.css">
   <script src="./script.js"></script>
-  <link rel="shortcut icon" type="image/png" href="./img/me.png"/>
-
+  <link rel="shortcut icon" type="image/jpeg" href="./img/me.jpg"/>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
     ga('create', 'UA-28810390-6', 'auto');
     ga('send', 'pageview', 'home');
   </script>
-
   <title>Lucas Tulio</title>
 </head>
-
 <body>
-  <section id="personal">
+  <section class="personal">
     <div>
       <a href="https://lucas-tulio.github.io/">
-        <img src="./img/me.png" class="my-picture" />
+        <img src="./img/me.jpg" class="my-picture" />
       </a>
     </div>
     <div>
       <h1>Lucas Tulio</h1>
       <h2>Game developer</h2>
-      <p>But also a neat Android and front-end engineer with 12 years of experience.</p>
       <p>
         <a href="https://github.com/lucas-tulio"><img src="./img/github-icon.png" class="icon" /></a>
         <a href="https://www.linkedin.com/in/lucas-tulio-02350610"><img src="./img/linkedin-icon.png" class="icon" /></a>
-        lucasctulio@gmail.com</p>
+      </p>
     </div>
   </section>
 
-  <section id="main-projects" class="games-list">
-    <div class="game">
-      <a href="./emoji.html">
-        <img src="./img/emoji1.png" class="game-screenshot" />
-        <h3>Emoji Match</h3>
-      </a>
+  <hr class="separator" />
+
+  <h3>Projects</h3>
+
+  <section class="games-list">
+    <div class="game-card">
+      <img src="./img/sorter-2.png" class="game-screenshot" />
+      <div class="game-content">
+        <h4>Sorter</h4>
+        <p>A chill game for people who like organizing, categorizing, classifying, arranging, grouping, cataloguing or just sorting in general.</p>
+        <p><a href="https://implementer76.itch.io/sorter" target="_blank">Play</a></p>
+        <p class="game-card-footer"><span class="game-tech">Made with Unity</span><span class="game-year">2021</span></p>
+      </div>
     </div>
 
-    <div class="game">
-      <a href="./waddles.html">
-        <img src="./img/waddles1.jpg" class="game-screenshot" />
-        <h3>Gravity Falls - Waddles Food Fever</h3>
-      </a>
+    <div class="game-card">
+      <img src="./img/tile-clicker.png" class="game-screenshot" />
+      <div class="game-content">
+        <h4>Tile Clicker</h4>
+        <p>Click tiles, get loot, click more tiles.</p>
+        <p><a href="https://implementer76.itch.io/tile-clicker" target="_blank">Play</a></p>
+        <p class="game-card-footer"><span class="game-tech">Made with Unity</span><span class="game-year">2020</span></p>
+      </div>
     </div>
 
-    <div class="game">
-      <a href="./nikito.html">
-        <img src="./img/nikito1.jpg" class="game-screenshot" />
-        <h3>Caça Biscoitos</h3>
-      </a>
+    <div class="game-card">
+      <img src="./img/emoji1.png" class="game-screenshot" />
+      <div class="game-content">
+        <h4>Emoji Match</h4>
+        <p>Mobile puzzle game where you need to match pairs of emojis. Matched emojis are added to a collection the player can try and complete, with more than 1600 unique emojis.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.tulio.emojimatch" target="_blank">Play</a></p>
+        <p class="game-card-footer"><span class="game-tech">Made with Unity</span><span class="game-year">2020</span></p>
+      </div>
     </div>
 
-    <div class="game">
-      <a href="./lone-block.html">
-        <img src="./img/lone-block1.png" class="game-screenshot" />
-        <h3>Lone Block</h3>
-      </a>
+    <div class="game-card">
+      <img src="./img/lottery.png" class="game-screenshot" />
+      <div class="game-content">
+        <h4>Lottery Simulator</h4>
+        <p>Find out how long it would take to win the lottery.</p>
+        <p><a href="https://implementer76.itch.io/lottery-simulator" target="_blank">Play</a></p>
+        <p class="game-card-footer"><span class="game-tech">Made with Unity</span><span class="game-year">2020</span></p>
+      </div>
     </div>
 
-    <div class="game">
-      <a href="./ags.html">
-        <img src="./img/ags1.png" class="game-screenshot" />
-        <h3>Awesome Game Store</h3>
-      </a>
+    <div class="game-card">
+      <img src="./img/waddles1.jpg" class="game-screenshot" />
+      <div class="game-content">
+        <h4>Gravity Falls - Waddles Food Fever</h4>
+        <p></p>
+        <p class="game-card-footer"><span class="game-tech">Pixijs</span><span class="game-year">2021</span></p>
+      </div>
     </div>
 
-    <div class="game">
-      <a href="./candle-light.html">
-        <img src="./img/candle-light1.png" class="game-screenshot" />
-        <h3>Candle Light</h3>
-      </a>
+    <div class="game-card">
+      <img src="./img/nikito1.jpg" class="game-screenshot" />
+      <div class="game-content">
+        <h4>Nikito Caça Biscoitos</h4>
+        <p>A chill game for people who like organizing, categorizing, classifying, arranging, grouping, cataloguing or just sorting in general.</p>
+        <p class="game-card-footer"><span class="game-tech">Pixijs</span><span class="game-year">2021</span></p>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="./img/lone-block1.jpg" class="game-screenshot" />
+      <div class="game-content">
+        <h4>Lone Block</h4>
+        <p>A chill game for people who like organizing, categorizing, classifying, arranging, grouping, cataloguing or just sorting in general.</p>
+        <p class="game-card-footer"><span class="game-tech">Libgdx</span><span class="game-year">2021</span></p>
+      </div>
     </div>
   </section>
 
-  <section id="other-projects">
-    <hr />
-    <h3 class="details-title">Other projects</h3>
+  <hr class="separator" />
 
-    <div class="other-games-list">
-      <div class="other-games">
-        <a href="https://github.com/libgdx-examples/space-arcade">
-          <img src="./img/space-arcade.png" class="other-game-screenshot" />
-          <h3>Space Arcade</h3>
-        </a>
-        <p>Space Invaders clone made in Libgdx.</p>
-      </div>
+  <h3>Smaller games and toy projects</h3>
 
-      <div class="other-games">
-        <a href="https://github.com/lucas-tulio/2d-astrodynamics">
-          <img src="./img/2d-astrodynamics.png" class="other-game-screenshot" />
-          <h3>2d-astrodynamics</h3>
-        </a>
-        <p>Control a rocket in a simulated space environment.</p>
-      </div>
-
-      <div class="other-games">
-        <a href="https://github.com/lucas-tulio/server-simulator">
-          <img src="./img/server-simulator.png" class="other-game-screenshot" />
-          <h3>Server simulator</h3>
-        </a>
-        <p>Server management simulator made in Libgdx.</p>
-      </div>
-
-      <div class="other-games">
-        <a href="https://github.com/lucas-tulio/beads-js">
-          <img src="./img/beads-js.png" class="other-game-screenshot" />
-          <h3>beads-js</h3>
-        </a>
-        <p>Hama beads simulator made in three.js.</p>
-      </div>
-
-      <div class="other-games">
-        <a href="https://github.com/lucas-tulio/py-lander">
-          <img src="./img/pylander.png" class="other-game-screenshot" />
-          <h3>py-lander</h3>
-        </a>
-        <p>Lunar Lander clone made in Pygame.</p>
-      </div>
-
-      <div class="other-games">
-        <a href="https://github.com/lucas-tulio/map-wars">
-          <img src="./img/map-wars.png" class="other-game-screenshot" />
-          <h3>Map Wars</h3>
-        </a>
-        <p>Artillery game based on Google Maps.</p>
-      </div>
-
+  <section class="games-list">
+    <div class="game-card">
+      <img src="./img/ags1.png" class="game-screenshot" />
+      <h4>Awesome Game Store</h4>
     </div>
-
   </section>
 </body>
 
