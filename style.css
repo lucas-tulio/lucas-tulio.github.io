@@ -124,25 +124,8 @@ hr {
   font-weight: lighter;
 }
 
-/* Other Projects */
-
-.other-games-list {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
-
-.other-games {
-  max-width: 256px;
-  margin-bottom: 20px;
-}
-
-.other-game-screenshot {
-  width: 256px;
-  height: auto;
+footer {
+  background-color: #222;
+  height: 160px;
+  width: 100%;
 }
